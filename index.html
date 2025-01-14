@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>My Projects</title>
+  <!-- Load Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans:900|Merriweather&display=swap" rel="stylesheet">  <!-- Load Styles -->
+  <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+  <!-- HTML Follows BEM naming conventions 
+  IDs are only used for sections to connect menu achors to sections -->
+  <header class="page__header">
+    <nav class="navbar__menu">
+      <!-- Navigation starts as empty UL that will be populated with JS -->
+      <ul id="navbar__list"></ul>
+    </nav>
+  </header>
+  <main>
+    <header class="main__hero">
+      <h1>Landing Page </h1>
+      <h3>Projects I Made</h3>
+    </header>
+    <!-- Each Section has an ID (used for the anchor) and 
+    a data attribute that will populate the li node.
+    Adding more sections will automatically populate nav.
+    The first section is set to active class by default -->
+    <section id="section1" data-nav="Section 1" class="your-active-class">
+      <div class="landing__container">
+        <h2>Navigaion Landing Page</h2>
+        <p>The Navigation Landscape Project is a web-based application designed to showcase a smooth and interactive navigation experience. Built using HTML, CSS, and JavaScript, this project focuses on creating an intuitive and visually appealing interface for users to easily explore and interact with the content. The project is designed to be responsive, ensuring seamless navigation across a variety of devices, from mobile phones to desktop computers. </p>
+        <p>This project emphasizes clean, organized layouts, with a focus on simplicity and user engagement. The navigation system is carefully crafted to ensure that users can effortlessly move between sections, with smooth transitions and well-structured menus. JavaScript is used to enhance the interactivity of the navigation, adding dynamic elements such as dropdown menus, interactive buttons, and content updates. By combining HTML for structure, CSS for styling, and JavaScript for functionality, the Navigation Landscape Project delivers an engaging and user-friendly experience.</p>
+      </div>
+
+    </section>
+    <section id="section2" data-nav="Section 2">
+      <div class="landing__container">
+        <h2>TO-DO</h2>
+        <p>The To-Do List Project is a simple yet effective task management tool built using HTML, CSS, and JavaScript. It allows users to add new tasks, edit existing ones, and delete completed tasks. The interface is clean and user-friendly, with the ability to mark tasks as completed. As tasks are added or updated, the list is automatically refreshed to reflect changes, providing a real-time experience.</p>
+
+        <p>This project highlights the power of JavaScript in managing dynamic content and user interactions. By combining HTML for the structure and CSS for styling, the project ensures a responsive design that works smoothly across different devices. The core functionality is driven by JavaScript, enabling the app to interact with the user and keep the task list organized.
+
+        </p>
+        <a href="https://elishadhaane.github.io/To-Do-list/">To Do</a>
+      </div>
+    </section>
+    <section id="section3" data-nav="Section 3">
+      <div class="landing__container">
+        <h2>Stop Watch</h2>
+        <p>The Stopwatch Project is a straightforward tool built using HTML, CSS, and JavaScript to help users track time. It allows users to start, stop, and reset a timer with ease. The timer displays the elapsed time in real-time, and the user interface is designed to be simple and intuitive.</p>
+        <p>JavaScript is used to handle the functionality of the stopwatch, ensuring accurate time tracking and smooth updates. The project also includes features like countdowns, making it a versatile tool for various time-based tasks. With clean design and efficient functionality, the stopwatch provides a practical solution for anyone needing to track time in real-time.
+
+        </p>
+        <a href="https://elishadhaane.github.io/Stop-watch/">Stop Stop-watch</a>
+      </div>
+    </section>
+    <section id="section4" data-nav="Section 4">
+      <div class="landing__container">
+        <h2>Tic Tac Toe</h2>
+        <p>The X or O (Tic-Tac-Toe) Game is an interactive web-based version of the classic game, created using HTML, CSS, and JavaScript. It allows two players to take turns placing 'X' or 'O' on a 3x3 grid, aiming to get three of their symbols in a row. The game automatically checks for a win or a tie and resets the board when the game ends.</p>
+
+        <p>The project demonstrates how JavaScript can be used to handle game logic, manage player interactions, and update the user interface in real-time. With a simple and responsive design, the game provides a seamless experience. The use of CSS enhances the visual elements of the game, making it visually appealing while maintaining a focus on functionality.</p>
+        <a href="https://elishadhaane.github.io/X-or-O/">Tic-Tac-Toe</a>
+      </div>
+    </section>
+  </main>
+  <footer class="page__footer">
+    <p>@Elisha Dhaane</p>
+    <p>https://github.com/ElishaDhaane</p>
+  </footer>
+  <script type="text/javascript" src="app.js"></script>
+</body>
+</html>
